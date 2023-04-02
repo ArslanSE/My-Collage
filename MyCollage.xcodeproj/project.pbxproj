@@ -13,6 +13,7 @@
 		155FD5AF29D844520033953C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155FD5AD29D844520033953C /* Main.storyboard */; };
 		155FD5B129D844550033953C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 155FD5B029D844550033953C /* Assets.xcassets */; };
 		155FD5B429D844550033953C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 155FD5B229D844550033953C /* LaunchScreen.storyboard */; };
+		155FD5BC29D846650033953C /* CollageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 155FD5BB29D846650033953C /* CollageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		155FD5B029D844550033953C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		155FD5B329D844550033953C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		155FD5B529D844550033953C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		155FD5BB29D846650033953C /* CollageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				155FD5A729D844520033953C /* AppDelegate.swift */,
 				155FD5A929D844520033953C /* SceneDelegate.swift */,
 				155FD5AB29D844520033953C /* ViewController.swift */,
+				155FD5BB29D846650033953C /* CollageView.swift */,
 				155FD5AD29D844520033953C /* Main.storyboard */,
 				155FD5B029D844550033953C /* Assets.xcassets */,
 				155FD5B229D844550033953C /* LaunchScreen.storyboard */,
@@ -140,6 +143,7 @@
 			files = (
 				155FD5AC29D844520033953C /* ViewController.swift in Sources */,
 				155FD5A829D844520033953C /* AppDelegate.swift in Sources */,
+				155FD5BC29D846650033953C /* CollageView.swift in Sources */,
 				155FD5AA29D844520033953C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -290,11 +294,13 @@
 				DEVELOPMENT_TEAM = FZ5T4V6KM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCollage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Collage";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My Collage app needs to access your photo library in order to create collages for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,9 +308,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.MyCollage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -318,11 +327,13 @@
 				DEVELOPMENT_TEAM = FZ5T4V6KM7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MyCollage/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "My Collage";
+				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "My Collage app needs to access your photo library in order to create collages for you";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -330,9 +341,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.arslan.MyCollage;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

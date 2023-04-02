@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  MyCollage
 //
-//  Created by Pro on 01/04/2023.
+//  Created by Arslan Saleem on 01/04/2023.
 //
 
 import UIKit
